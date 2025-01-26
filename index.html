@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.indigo.min.css">
+    <script src="main.js" defer></script>
+
+    <style>
+        button[disabled] {
+            pointer-events: auto;
+        }
+
+        #video-embed-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+    <title>Return Google Drive Video Player</title>
+</head>
+
+<body class="container">
+    <main>
+        <h1>Return Google Drive Video Player</h1>
+        <p>Enter drive video link</p>
+
+        <input id="url-input" type="url" name="video-url" aria-describedby="url_status"
+            placeholder="Enter google drive video link">
+        <small id="url-status"></small>
+
+
+        <div class="action-button grid">
+            <!-- <button id="open-new-tab" class="contrast" data-placement="bottom">Open in New Tab</button> -->
+            <button id="open-below" data-placement="bottom">Open Below</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="video-embed-container"></div>
+    </footer>
+</body>
+
+</html>
